@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-13 login and signup page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="login-wrapper">
+    <form class="form">
+      <h2>Login</h2>
+      <div class="input-group">
+        <input type="email" name="loginUser" id="email" autocomplete="off" onkeyup="validateEmail()" onfocus="moveLabelUp('email')" required>
+        <label for="email">Email</label>
+         <span id="emailError" class="error"></span>
+      </div>
+      <div class="input-group">
+        <input type="password" name="loginPassword" id="password" onkeyup="validatePassword()" onfocus="moveLabelUp('password')" required>
+        <label for="password">Password</label>
+         <span id="passwordError" class="error"></span>
+      </div>
+      <div class="btn">
+      <input type="submit" value="Login" onclick="submitForm()" class="submit-btn">
+              </div>
+      <div class="txt">
+      <a href="#" class="forgot-pw">Forgot Password?</a><br>
+              </div>
+              <div class="txt">
+            <a href="index2.html" class="forgot-pw">Create a account</a>
+                </div>
+    </form>
+ <script src="main.js"></script>
+</body>
+</html>

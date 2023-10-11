@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-13 login and signup page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="login-wrapper">
+    <form action="" class="form">
+      <img src="img/download.jpg" alt="">
+      <h2>Sign-Up</h2>
+       <div class="input-group">
+        <input type="text" name="username" id="username" autocomplete="off" onkeyup="validateUsername()" onfocus="moveLabelUp('username')"  required>
+        <label for="username">Username</label>
+         <span id="usernameError" class="error"></span>
+      </div>
+      <div class="input-group">
+        <input type="email" name="loginUser" id="email" autocomplete="off" onkeyup="validateEmail()" onfocus="moveLabelUp('email')" required>
+        <label for="email">Email</label>
+         <span id="emailError" class="error"></span>
+      </div>
+      <div class="input-group">
+        <input type="password" name="loginPassword" id="password" onkeyup="validatePassword()" onfocus="moveLabelUp('password')" required>
+        <label for="password">Password</label>
+         <span id="passwordError" class="error"></span>
+      </div>
+      <div class="btn">
+      <input type="submit" value="Sign-Up" onclick="submitForm()" class="submit-btn">
+               </div>
+            <div class="txt">
+            <a href="index.html" class="forgot-pw">Alread have Account</a>
+                </div>
+                <div class="txt">
+            <a href="#" class="forgot-pw">Terms & Condition</a>
+                </div>
+    </form>
+ <script src="main.js"></script>
+</body>
+</html>
